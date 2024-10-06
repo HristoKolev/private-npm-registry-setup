@@ -1,0 +1,11 @@
+name: 'private-npm-registry-setup'
+services:
+  verdaccio:
+    image: verdaccio/verdaccio
+    restart: unless-stopped
+    ports:
+      - 4873:4873
+    volumes:
+      - verdaccio:/verdaccio
+volumes:
+  verdaccio:
