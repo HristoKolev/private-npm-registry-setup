@@ -2,7 +2,7 @@
 
 ### Docker setup
 
-- How to start
+- Start
 
 ```sh
 
@@ -10,7 +10,7 @@ docker compose up -d
 
 ```
 
-- How to stop
+- Stop
 
 ```sh
 
@@ -18,7 +18,7 @@ docker compose down --remove-orphans
 
 ```
 
-- How to reset everything completely
+- Stop and delete all data
 
 ```sh
 
@@ -28,7 +28,7 @@ docker compose down --remove-orphans --volumes
 
 ### Using the registry
 
-- Login into the registry
+- Login to the registry
 
 ```sh
 
