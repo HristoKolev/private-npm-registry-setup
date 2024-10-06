@@ -6,6 +6,6 @@ services:
     ports:
       - 4873:4873
     volumes:
-      - verdaccio:/verdaccio
+      - verdaccio-storage:/verdaccio/storage
 volumes:
-  verdaccio:
+  verdaccio-storage:
