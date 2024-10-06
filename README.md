@@ -32,7 +32,7 @@ docker compose down --remove-orphans --volumes
 
 ```sh
 
-npm adduser --registry http://localhost:4873
+npx -y npm-cli-login -u testUser -p testPass -e test@example.com -r http://localhost:4873
 
 ```
 
