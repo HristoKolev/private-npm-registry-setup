@@ -7,5 +7,6 @@ services:
       - 4873:4873
     volumes:
       - verdaccio-storage:/verdaccio/storage
+      - ./config.yaml:/verdaccio/conf/config.yaml
 volumes:
   verdaccio-storage:

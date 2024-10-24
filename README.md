@@ -30,9 +30,11 @@ docker compose down --remove-orphans --volumes
 
 - Login to the registry
 
+Verdaccio (the registry) is configured to allow anonymous publishing but npm (the package manager) still requires an auth token in order to publish a package. https://github.com/npm/cli/blob/latest/lib/commands/publish.js#L149
+
 ```sh
 
-npx -y npm-cli-login -u testUser -p testPass -e test@example.com -r http://localhost:4873
+echo "//localhost:4873/:_authToken=fake-token" >> ~/.npmrc
 
 ```
 
